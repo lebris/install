@@ -19,6 +19,7 @@ OLD_PWD=$(pwd)
 cd tmp
 
 su ${USERNAME} --preserve-environment -c 'pip install --user powerline-status'
+su ${USERNAME} --preserve-environment -c 'pip install --user powerline-gitstatus'
 
 echo "Downloading fonts"
 su ${USERNAME} --preserve-environment -c 'wget -q https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf'
